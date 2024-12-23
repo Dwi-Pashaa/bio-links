@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwi Pasha Bio Links</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Animation Text -->
+    <span class="bg-text-animation">Dwi Pasha</span>
+
+    <!-- Profile -->
+    <img class="my-photo" src="./img/logo.jpeg" alt="AR Logo">
+    <h1 id="typed-name"></h1>
+    <p>Web Developer || Web Development enthusiast</p>
+
+    <div class="bio">
+        <p>
+            Hai, saya Dwi Pasha Anggara Putra, seorang Web Developer yang penuh semangat dengan dorongan kuat untuk membangun solusi web yang handal, skalabel, dan efisien. Perjalanan saya dalam pengembangan perangkat lunak didorong oleh rasa ingin tahu dan komitmen
+            untuk menguasai teknologi web yang memberikan pengalaman pengguna yang berdampak.
+        </p>
+    </div>
+
+    <!-- Link List -->
+    <ul class="links">
+        <li>
+            <a href="https://github.com/DwiPashaDjango" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph-fill ph-github-logo"></i>
+                </div>
+                <p class="link-text">Github</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/dwi-pasha-anggara-putra-3a2790268/" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph ph-linkedin-logo"></i>
+                </div>
+                <p class="link-text">Linkedin</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/dwipashaa_/" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph ph-instagram-logo"></i>
+                </div>
+                <p class="link-text">Instagram</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/share/DXX6pGs3zURMh61S/" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph ph-facebook-logo"></i>
+                </div>
+                <p class="link-text">Facebook</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <div class="copyright">
+        <p>Copyright Dwi Pasha Anggara Putra &copy; 2024</p>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast">
+    </div>
+
+    <script src="/script.js"></script>
+    <script>
+        const element = document.getElementById("typed-name");
+        const text = "Dwi Pasha Anggara Putra";
+        let index = 0;
+
+        function typeText() {
+            if (index < text.length) {
+                element.textContent += text.charAt(index);
+                index++;
+            }
+        }
+        setInterval(typeText, 100);
+    </script>
+</body>
+
+</html>
